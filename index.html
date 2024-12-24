@@ -1,0 +1,57 @@
+<!-- HTML Code for the Athlete Registration System. Save this as `index.html`. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Athlete Registration System</h1>
+        <div class="form-container">
+            <!-- Admin Login Form -->
+            <form id="loginForm" action="backend.php" method="POST">
+                <h2>Admin Login</h2>
+                <input type="hidden" name="login_admin" value="1">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Admin Registration Form -->
+            <form id="registerForm" action="backend.php" method="POST">
+                <h2>Admin Registration</h2>
+                <input type="hidden" name="register_admin" value="1">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Forgot Password Form -->
+            <form id="forgotPasswordForm" action="backend.php" method="POST">
+                <h2>Forgot Password</h2>
+                <input type="hidden" name="forgot_password" value="1">
+                <input type="text" name="username" placeholder="Enter your email" required>
+                <button type="submit">Reset Password</button>
+            </form>
+
+            <!-- Athlete Registration Form -->
+            <form id="athleteForm" action="backend.php" method="POST">
+                <h2>Register Athlete</h2>
+                <input type="hidden" name="register_athlete" value="1">
+                <input type="text" name="name" placeholder="Athlete Name" required>
+                <input type="email" name="email" placeholder="Athlete Email" required>
+                <select name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Football">Football</option>
+                    <option value="Netball">Netball</option>
+                    <option value="Others">Others</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
