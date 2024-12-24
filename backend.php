@@ -1,4 +1,4 @@
-// This is the PHP backend code to handle the athlete registration system. Save this in a file like `backend.php`.
+// This is the PHP backend code to handle the athlete registration system. .
 
 <?php
 // Include necessary files for database connection and email sending
